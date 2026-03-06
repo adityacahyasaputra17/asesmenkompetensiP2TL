@@ -82,7 +82,9 @@ else:
         st.subheader("📄 Transkrip Jawaban")
         st.write(transcript)
 
-        # Prediksi dengan pipeline
+    # Prediksi dengan pipeline
+    # Tambahkan tombol untuk memicu prediksi
+    if st.button("Lihat Hasil Prediksi"):
         with open("pipeline_asesmen.pkl", "rb") as f:
             pipeline = pickle.load(f)
         prediction = pipeline.predict([transcript])[0]
@@ -181,4 +183,5 @@ if st.session_state.riwayat_asesmen:
 
 # Tombol logout
     if st.button("Logout"):
+
         logout()
