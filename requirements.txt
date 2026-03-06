@@ -5,3 +5,4 @@ nltk>=3.9
 scikit-learn>=1.5
 xgboost>=2.0
 streamlit>=1.30
+faster-whisper[cpu]>=1.0
