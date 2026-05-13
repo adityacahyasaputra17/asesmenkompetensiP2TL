@@ -63,7 +63,7 @@ else:
     nama_asesi = st.text_input("👤 Nama Asesi yang diuji")
 
     # Input audio
-    audio_file = st.audio_input("🎙️ Rekam atau unggah audio jawaban")
+    audio_file = st.audio_input("🎙️ Rekam audio jawaban")
 
     if audio_file is not None and nama_asesi.strip() != "":
         # Simpan audio sementara
